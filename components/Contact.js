@@ -4,8 +4,8 @@ import userData from "@constants/data";
 export default function Contact() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
-        <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
+      <div className="mb-4 max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
+        <h1 className="text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
           Contact
         </h1>
       </div>
@@ -72,25 +72,7 @@ export default function Contact() {
             </div>
             <div className="social-icons flex flex-row space-x-8">
               <a
-                href={userData.socialLinks.facebook}
-                className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
-              >
-                <svg
-                  width="24"
-                  height="24"
-                  className="text-gray-50"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
-                    fill="currentColor"
-                  />
-                </svg>
-              </a>
-              <a
-                href={userData.socialLinks.twitter}
+                href={userData.socialLinks.github}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
               >
                 <svg
@@ -110,7 +92,7 @@ export default function Contact() {
                 </svg>
               </a>
               <a
-                href={userData.socialLinks.instagram}
+                href={userData.socialLinks.linkedin}
                 className="h-10 w-10 rounded-full hover:bg-blue-500 flex items-center justify-center cursor-pointer"
               >
                 <svg

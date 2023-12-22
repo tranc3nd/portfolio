@@ -4,9 +4,9 @@ import userData from "@constants/data";
 export default function AboutMe() {
   return (
     <section className="bg-white dark:bg-gray-800">
-      <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
+      <div className="mb-10 max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800">
         <h1 className=" text-5xl md:text-9xl font-bold py-20 text-center md:text-left">
-          About Me.
+          About Me
         </h1>
       </div>
       <div className="bg-[#F1F1F1] -mt-10 dark:bg-gray-900">
@@ -17,10 +17,10 @@ export default function AboutMe() {
           >
             {userData.about.title}. Currently working on{" "}
             <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
+              className="bg-orange-400 rounded-md px-2 py-1 text-white"
               href={userData.about.currentProjectUrl}
             >
-              {userData.about.currentProject} ✈️
+              {userData.about.currentProject} 
             </a>
           </p>
         </div>
@@ -34,14 +34,14 @@ export default function AboutMe() {
                 Contact
               </h1>
               <p className="text-lg text-gray-500 mt-4 dark:text-gray-300">
-                For any sort help / enquiry, shoot a{" "}
+                For any help / inquiries, shoot me a {" "}
                 <a
                   href={`mailto:${userData.email}`}
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  mail
+                  email
                 </a>{" "}
-                and I'll get back. I swear.
+                and I'll get back to you soon.
               </p>
             </div>
             <div className="mt-8">
@@ -66,42 +66,9 @@ export default function AboutMe() {
               Social Links
             </h1>
             <div className="mt-4 ml-4">
-              <div className="flex flex-row justify-start items-center ">
-                <a
-                  href={userData.socialLinks.peerlist}
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Peerlist
-                  </div>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center ">
-                <a
-                  href={userData.socialLinks.facebook}
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Facebook
-                  </div>
-                </a>
-              </div>
-              <div className="flex flex-row justify-start items-center">
-                <a
-                  href={userData.socialLinks.twitter}
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
-                    Twitter
-                  </div>
-                </a>
-              </div>
+
+
+
               <div className="flex flex-row justify-start items-center">
                 <a
                   href={userData.socialLinks.github}
@@ -126,18 +93,7 @@ export default function AboutMe() {
                   </div>
                 </a>
               </div>
-              <div className="flex flex-row justify-start items-center">
-                <a
-                  href={userData.socialLinks.instagram}
-                  className="flex flex-row items-center space-x-4 group"
-                >
-                  <div className="my-4">&rarr;</div>
-                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
-                    <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
-                    Instagram
-                  </div>
-                </a>
-              </div>
+
             </div>
           </div>
           {/* Text area */}
@@ -151,7 +107,7 @@ export default function AboutMe() {
               </p>
             ))}
 
-            <h1 className="bg-red-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
+            <h1 className="bg-indigo-500 text-3xl rounded-md px-2 py-1 inline-block font-bold text-gray-50">
               Tech Stack
             </h1>
             <div className="flex flex-row flex-wrap mt-8">
@@ -164,23 +120,11 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/typescript/typescript.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
@@ -192,15 +136,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
-                className="h-20 w-20 mx-4 my-4"
-              />
-              <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/postgresql/postgresql.png"
                 className="h-20 w-20 mx-4 my-4"
               />
             </div>
