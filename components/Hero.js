@@ -20,10 +20,7 @@ export default function Hero() {
         <h1 className="text-4xl md:text-3xl font-bold text-gray-700 dark:text-gray-200 my-2 pt-5">
             Socrates - "The more I know, the more I realize I know nothing."
         </h1>
-        <button type="button" class="bg-indigo-500 ..." disabled>
-          <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24"></svg>
-            Thinking...
-        </button>
+
       </div>
       {/* Image container */}
       <div className="hidden lg:block relative w-full md:w-1/2 -mr-40 mt-20">
